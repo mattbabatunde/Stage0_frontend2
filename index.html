@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Boot Screen -->
+    <div class="boot-screen" id="bootScreen">
+      <div class="boot-line" style="animation-delay: 0s">
+        Initializing Mr Matt System ...
+      </div>
+      <div class="boot-line" style="animation-delay: 1s">
+        Authenticating: Mr. Matt
+      </div>
+      <div class="boot-line" style="animation-delay: 2s">
+        Activating MI-Core Engine ...
+      </div>
+      <div class="boot-line" style="animation-delay: 3s">
+        System Status: Online
+      </div>
+    </div>
+
+    <!-- Profile Card -->
+    <article id="profileCard" data-testid="test-profile-card">
+      <figure>
+        <img
+          id="avatar"
+          src="/assets/logo.jpg"
+          alt="Mr Matt"
+          data-testid="test-user-avatar"
+        />
+      </figure>
+
+      <div class="info">
+        <header>
+          <h2 data-testid="test-user-name">Matt Babatunde</h2>
+          <div>
+            <i class="fa-solid fa-clock"></i>
+            <span id="live-time" data-testid="test-user-time"></span>
+            <span>ms</span>
+          </div>
+        </header>
+
+        <p data-testid="test-user-bio">
+          A visionary software engineer crafting next-gen interfaces that merge
+          precision, power, and futuristic design.
+        </p>
+
+        <nav class="social-links" data-testid="test-user-social-links">
+          <a
+            href="https://x.com/lastgigin0/"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-testid="test-user-social-twitter"
+          >
+            <img src="/assets/twitter.png" alt="Twitter" />
+          </a>
+
+          <a
+            href="https://github.com/matt-babatunde"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-testid="test-user-social-github"
+          >
+            <img src="/assets/github.png" alt="GitHub" />
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/matt-babatunde"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-testid="test-user-social-linkedin"
+          >
+            <img src="/assets/linkedin.png" alt="LinkedIn" />
+          </a>
+
+          <a
+            href="mailto:babsmathew68@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-testid="test-user-social-email"
+          >
+            <img src="/assets/email.png" alt="Email" />
+          </a>
+        </nav>
+
+        <section>
+          <h3><i class="fa-solid fa-bolt"></i> Hobbies</h3>
+          <ul data-testid="test-user-hobbies">
+            <li>Building futuristic UIs</li>
+            <li>Security research</li>
+            <li>Music & tech-art synergy</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3><i class="fa-solid fa-ban"></i> Dislikes</h3>
+          <ul data-testid="test-user-dislikes">
+            <li>Laggy systems</li>
+            <li>Unrefined design</li>
+            <li>Outdated logic</li>
+          </ul>
+        </section>
+      </div>
+    </article>
+
+    <script src="script.js"></script>
+  </body>
+</html>
